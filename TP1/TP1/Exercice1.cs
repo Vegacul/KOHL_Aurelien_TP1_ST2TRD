@@ -6,11 +6,27 @@ namespace TP1
 	{
 		public void main()
 		{
-			Part1();
 
-			Part2();
+			Console.WriteLine("choose question 1,2 or 3");
+			int.TryParse(Console.ReadLine(), out var result);
+			if (result == 1)
+			{
+				Part1();
+			}
+			else if ((result == 2))
+			{
+				Part2();
+			}
+			else if ((result == 3))
+			{
+				Part3();
+			}
+			else
+			{
+				Console.WriteLine("relou toi");
+			}
 
-			Part3();
+
 		}
 
 

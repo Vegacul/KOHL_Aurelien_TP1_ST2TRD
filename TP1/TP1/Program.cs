@@ -8,7 +8,7 @@ namespace TP1
     class Program
     {
 
-        static void Main(string[] args)
+         static void Main(string[] args)
         {
 
             int choice;
@@ -18,7 +18,7 @@ namespace TP1
                 choice = Convert.ToInt32(Console.ReadLine());
                 string result = computeMainMenuChoice(choice);
                 Console.WriteLine(result);
-            } while (choice != 5);
+            } while (choice != 6);
             Console.ReadLine();
         }
 
@@ -31,6 +31,7 @@ namespace TP1
                     + " Exercise 3: Try/Catch\n "
                     + " Exercise 4: Square\n "
                     + " Exercise 5: Christmas Tree\n "
+                    + " Go away from this evil \n "
                     + " Whats is your choice ? :\n ";
         }
 
