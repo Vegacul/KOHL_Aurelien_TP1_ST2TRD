@@ -33,7 +33,9 @@ namespace TP1
 			Console.WriteLine("Please choose the n and m off your square :) ");
 			while (((1 <= n && n <= 1000) && (1 <= m && m <= 1000)) == false)
 			{
+				Console.WriteLine("give the N off your square :) ");
 				n = AskUserForParameter();
+				Console.WriteLine("give the M off your square :) ");
 				m = AskUserForParameter();
 			}
 
@@ -99,7 +101,6 @@ namespace TP1
 
             static int AskUserForParameter()
 			{
-				Console.WriteLine("Please write a number and press enter :");
 				int.TryParse(Console.ReadLine(), out var result);
 				return result;
 			}
@@ -113,7 +114,9 @@ namespace TP1
 			Console.WriteLine("\nPlease choose the n and m off your square :) ");
 			while (((1 <= n && n <= 1000) && (1 <= m && m <= 1000)) == false)
 			{
+				Console.WriteLine("give the N off your square :) ");
 				n = AskUserForParameter();
+				Console.WriteLine("give the M off your square :) ");
 				m = AskUserForParameter();
 			}
 
