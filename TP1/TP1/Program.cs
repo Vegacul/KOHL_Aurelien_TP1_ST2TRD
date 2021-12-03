@@ -25,14 +25,14 @@ namespace TP1
         public static string getMainMenu()
         {
 
-            return " ****** Menu ******\n "
-                    + " Exercise 1: Multiplication Tables\n "
-                    + " Exercise 2: More math\n "
-                    + " Exercise 3: Try/Catch\n "
-                    + " Exercise 4: Square\n "
-                    + " Exercise 5: Christmas Tree\n "
-                    + " Go away from this evil \n "
-                    + " Whats is your choice ? :\n ";
+            return " ************ Menu ************\n "
+                    + " 1: Exercise Multiplication Tables\n "
+                    + " 2: Exercise More math\n "
+                    + " 3: Exercise Try/Catch\n "
+                    + " 4: Exercise Square\n "
+                    + " 5: Exercise Christmas Tree\n "
+                    + " 6 : Go away from this evil \n "
+                    + "  Whats is your choice ? :\n ";
         }
 
         public static string computeMainMenuChoice(int choice)
@@ -62,7 +62,7 @@ namespace TP1
                     ex5.main();
                     break;
                 default:
-                    result += "Bad choice, try again";
+                    result += "\nBad choice, try again";
                     break;
             }
             return result;

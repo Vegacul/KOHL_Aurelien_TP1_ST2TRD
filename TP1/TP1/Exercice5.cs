@@ -6,7 +6,7 @@ namespace TP1
 	{
         public void main()
         {
-            Console.WriteLine("choose 1 for a tree or 2 for a special tree ");
+            Console.WriteLine("\nchoose 1 for a tree or 2 for a special tree ");
             int.TryParse(Console.ReadLine(), out var result);
             if (result == 1)
             {
@@ -18,7 +18,7 @@ namespace TP1
             }
             else
             {
-                Console.WriteLine("relou toi");
+                Console.WriteLine("\nrelou toi");
             }
 
 
@@ -126,22 +126,29 @@ namespace TP1
                     Console.WriteLine(result);
                 }
 
+                Random aleatoire = new Random();
+                int compteuri = 0;
+                int compteuro = 0;
+
 
                 if (a != 0) return;
                 {
-                    for (int i = 0; i <= high * 2; i++) // largeur max de l'arbre
+                    for (int i = 0; i <= high * 2; i++) 
                     {
-                        if ((i >= left) && (i <= right)) // vérifier si dans l'interval où on met des *
+                        if ((i >= left) && (i <= right)) 
                         {
-                            if (current_line % 3 == i % 3)
+                            if (current_line % 3 == (i-2) % 3)
                             {
-                                if (current_line % 9 == i % 9)
+                                int nbRand = aleatoire.Next(10);
+                                if ((nbRand%2 == 0) && (compteuri> compteuro*1.5) )
                                 {
                                     result = result + "o";
+                                    compteuro++;
                                 }
                                 else
                                 {
                                     result = result + "i";
+                                    compteuri++;
                                 }
                             }
                             else
@@ -149,7 +156,7 @@ namespace TP1
                                 result = result + "*";
                             }
                         }
-                        else // sinon mettre un espace
+                        else 
                         {
                             result = result + " ";
                         }
@@ -164,7 +171,7 @@ namespace TP1
 
         static int AskUserForParameter()
         {
-            Console.WriteLine("choose a tree Size, must be between 3 and 20:");
+            Console.WriteLine("\nchoose a tree Size, must be between 3 and 20:");
             int.TryParse(Console.ReadLine(), out var result);
             return result;
         }

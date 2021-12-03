@@ -24,13 +24,13 @@ namespace TP1
             }
             else
             {
-                Console.WriteLine("relou toi");
+                Console.WriteLine("\nrelou toi");
             }
         }
 
         public void Part1()
         {
-            Console.WriteLine("Prime number under 100: ");
+            Console.WriteLine("\nPrime number under 100: ");
             for (int I = 2; I < 100; I++) if (Prime(I)) Console.Write((int)I + " ");
             Console.WriteLine();
 
@@ -69,7 +69,7 @@ namespace TP1
 
         private static int AskUserForParameter()
         {
-            Console.WriteLine("Please write a number and press enter :");
+            Console.WriteLine("\nPlease write a number and press enter :");
             int.TryParse(Console.ReadLine(), out var result);
             return result;
         }

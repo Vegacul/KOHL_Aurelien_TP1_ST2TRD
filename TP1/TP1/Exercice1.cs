@@ -7,7 +7,7 @@ namespace TP1
 		public void main()
 		{
 
-			Console.WriteLine("choose question 1,2 or 3");
+			Console.WriteLine("\nchoose question 1,2 or 3");
 			int.TryParse(Console.ReadLine(), out var result);
 			if (result == 1)
 			{
@@ -23,7 +23,7 @@ namespace TP1
 			}
 			else
 			{
-				Console.WriteLine("relou toi");
+				Console.WriteLine("\nrelou toi");
 			}
 
 
@@ -32,7 +32,7 @@ namespace TP1
 
 		private static void Part1()
 		{
-			Console.WriteLine(" Multiplication Tables :");
+			Console.WriteLine("\nMultiplication Tables :");
 
 			for (int i = 2; i <= 12; i++)
 			{
@@ -47,7 +47,7 @@ namespace TP1
 
 		private static void Part2()
         {
-			Console.WriteLine(" Multiplication Tables odd :");
+			Console.WriteLine("\nMultiplication Tables odd :");
 
 			for (int i = 2; i <= 12; i++)
 			{
@@ -68,7 +68,7 @@ namespace TP1
 
 		private static void Part3()
 		{
-			Console.WriteLine(" Custome Multiplication Tables : \n");
+			Console.WriteLine("\nCustome Multiplication Tables : \n");
 			var value = AskUserForParameter();
 			Console.WriteLine("You have choice " + value + "\n");
 
@@ -86,7 +86,7 @@ namespace TP1
 
 		private static int AskUserForParameter()
 		{
-			Console.WriteLine("Please write a number and press enter :");
+			Console.WriteLine("\nPlease write a number and press enter :");
 			int.TryParse(Console.ReadLine(), out var result);
 			return result;
 		}

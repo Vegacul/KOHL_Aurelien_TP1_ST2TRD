@@ -6,7 +6,7 @@ namespace TP1
 	{
 		public void main()
 		{
-            Console.WriteLine("n for every value between - 3 and 3" );
+            Console.WriteLine("\nn for every value between - 3 and 3");
             
             Try_Catch(-3,3 );
 
